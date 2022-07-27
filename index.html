@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoeMart || tailwind CSS</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                colors: {
+                    clifford: '#da373d',
+                    theme1: '#fa804c',
+                    theme2: '#363958',
+                    themebtn: '#3D4FF3',
+                    themebg: '#fff9f4',
+                }
+                }
+            }
+        }
+    </script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <header class="bg-themebg py-10">
+        <!-- banner -->
+        <div class="container mx-auto flex-col-reverse flex md:flex-row items-center justify-center md:justify-around ">
+            <!-- banner image -->
+            <div class="m-0">
+                <img class="w-3/4 md:w-3/4 lg:w-full m-auto pt-8 md:pt-0" src="./src/images/Photos/banner.png" alt="" srcset="">
+            </div>
+            <!-- banner texts -->
+            <div class="space-y-3 w-3/4 md:w-2/5 2xl:w-2/6 text-center sm:text-left" >
+                <h1 class="text-5xl sm:text-6xl md:text-7xl uppercase font-bold">
+                    <span class= "theme-font-family text-theme1">shoemart Nike</span>
+                    <br>
+                    <span class="theme-font-family text-theme2">Infinity Run 2</span>
+                </h1>
+                <p class="text-stone-800 font-semibold pb-3">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <button class="bg-themebtn text-white py-4 px-8 rounded-lg uppercase font-semibold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                    </svg>
+                    Buy Now</button>
+            </div>
+        </div> 
+    </header>
+    <main class="container mx-auto">
+        <div class="my-40">
+            <h1 class="theme-font-family text-theme2 text-5xl sm:text-6xl md:text-7xl uppercase text-center sm:text-left my-4">CASUAL SHOES</h1>
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+                <!-- CASUAL SHOES -->
+                <!-- shoe1 -->
+                <div class="card customShadow rounded-lg ">
+                    <div class="p-8 ">
+                        <img class="bg-slate-100 rounded-lg mx-auto" src="./src/images/Photos/cs-1.png" alt="" srcset="">
+                    </div>
+                    <div class="card-info p-8 pt-0">
+                        <h2 class="text-2xl md:text-3xl font-bold text-theme2 py-2">Air Max Vomero</h2>
+                        <p class="text-stone-800 font-semibold py-2">Men's Road Running Shoes. To get accurate shipping information Edit Location</p>
+                        <div class="flex justify-between  flex-col md:flex-row py-4">
+                            <h2 class="price  text-4xl xl:text-5xl text-orange-500 font-bold text-center md:text-left mb-4 md:mb-0">$150</h2>
+                            <button class="bg-themebtn text-white py-3 px-5 xl:py-4 xl:px-6 rounded-lg uppercase font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- shoe2 -->
+                <div class="card customShadow rounded-lg">
+                    <div class="p-8 ">
+                        <img class="bg-slate-100 rounded-lg mx-auto" src="./src/images/Photos/cs-2.png" alt="" srcset="">
+                    </div>
+                    <div class="card-info p-8 pt-0">
+                        <h2 class="text-2xl md:text-3xl font-bold text-theme2 py-2">Air Max Flyknit</h2>
+                        <p class="text-stone-800 font-semibold py-2">Men's Road Running Shoes. To get accurate shipping information Edit Location</p>
+                        <div class="flex justify-between  flex-col md:flex-row py-4">
+                            <h2 class="price  text-4xl xl:text-5xl text-orange-500 font-bold text-center md:text-left mb-4 md:mb-0">$135</h2>
+                            <button class="bg-themebtn text-white py-3 px-5 xl:py-4 xl:px-6 rounded-lg uppercase font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- shoe3 -->
+                <div class="card customShadow rounded-lg">
+                    <div class="p-8 ">
+                        <img class="bg-slate-100 rounded-lg mx-auto" src="./src/images/Photos/cs-3.png" alt="" srcset="">
+                    </div>
+                    <div class="card-info p-8 pt-0">
+                        <h2 class="text-2xl md:text-3xl font-bold text-theme2 py-2">Air Zoom 95</h2>
+                        <p class="text-stone-800 font-semibold py-2">Men's Road Running Shoes. To get accurate shipping information Edit Location</p>
+                        <div class="flex justify-between  flex-col md:flex-row py-4">
+                            <h2 class="price  text-4xl xl:text-5xl text-orange-500 font-bold text-center md:text-left mb-4 md:mb-0">$155</h2>
+                            <button class="bg-themebtn text-white py-3 px-5 xl:py-4 xl:px-6 rounded-lg uppercase font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="my-40">
+            <h1 class="theme-font-family text-theme2 text-5xl sm:text-6xl md:text-7xl uppercase text-center sm:text-left my-4">FORMAL SHOES</h1>
+            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+                <!-- FORMAL SHOES -->
+                <!-- shoe1 -->
+                <div class="card customShadow rounded-lg ">
+                    <div class="p-8 ">
+                        <img class="bg-slate-100 rounded-lg mx-auto" src="./src/images/Photos/fs-1.png" alt="" srcset="">
+                    </div>
+                    <div class="card-info p-8 pt-0">
+                        <h2 class="text-2xl md:text-3xl font-bold text-theme2 py-2">High-Cut Leather</h2>
+                        <p class="text-stone-800 font-semibold py-2">Men's formal office Shoes. To get accurate shipping information Edit Location</p>
+                        <div class="flex justify-between  flex-col md:flex-row py-4">
+                            <h2 class="price  text-4xl xl:text-5xl text-orange-500 font-bold text-center md:text-left mb-4 md:mb-0">$195</h2>
+                            <button class="bg-themebtn text-white py-3 px-5 xl:py-4 xl:px-6 rounded-lg uppercase font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- shoe2 -->
+                <div class="card customShadow rounded-lg ">
+                    <div class="p-8 ">
+                        <img class="bg-slate-100 rounded-lg mx-auto" src="./src/images/Photos/fs-2.png" alt="" srcset="">
+                    </div>
+                    <div class="card-info p-8 pt-0">
+                        <h2 class="text-2xl md:text-3xl font-bold text-theme2 py-2">Rid Black Leather</h2>
+                        <p class="text-stone-800 font-semibold py-2">Men's formal office Shoes. To get accurate shipping information Edit Location</p>
+                        <div class="flex justify-between  flex-col md:flex-row py-4">
+                            <h2 class="price  text-4xl xl:text-5xl text-orange-500 font-bold text-center md:text-left mb-4 md:mb-0">$170</h2>
+                            <button class="bg-themebtn text-white py-3 px-5 xl:py-4 xl:px-6 rounded-lg uppercase font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- shoe3 -->
+                <div class="card customShadow rounded-lg ">
+                    <div class="p-8 ">
+                        <img class="bg-slate-100 rounded-lg mx-auto" src="./src/images/Photos/fs-3.png" alt="" srcset="">
+                    </div>
+                    <div class="card-info p-8 pt-0">
+                        <h2 class="text-2xl md:text-3xl font-bold text-theme2 py-2">Dark Coco Leather</h2>
+                        <p class="text-stone-800 font-semibold py-2">Men's formal office Shoes. To get accurate shipping information Edit Location</p>
+                        <div class="flex justify-between  flex-col md:flex-row py-4">
+                            <h2 class="price  text-4xl xl:text-5xl text-orange-500 font-bold text-center md:text-left mb-4 md:mb-0">$155</h2>
+                            <button class="bg-themebtn text-white py-3 px-5 xl:py-4 xl:px-6 rounded-lg uppercase font-semibold">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                                </svg>
+                                Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <script src="./tailwind.config.js"></script>
+</body>
+</html>
